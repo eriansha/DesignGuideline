@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct TextFields: View {
+    @State var dummyValue = "Ken"
+    private var placeholder = "Username"
+    
     var body: some View {
         VStack {
             HStack {
@@ -16,6 +19,15 @@ struct TextFields: View {
                     .fontWeight(.bold)
                 Spacer()
             }
+            
+            TextField(placeholder, text: $dummyValue)
+                .textFieldStyle(PrimaryTextFieldStyle())
+            
+            TextField(placeholder, text: $dummyValue)
+                .textFieldStyle(PrimaryTextFieldStyle(isError: true))
+            
+            TextField(placeholder, text: $dummyValue)
+                .textFieldStyle(PrimaryTextFieldStyle(disabled: true))
         }
     }
 }
