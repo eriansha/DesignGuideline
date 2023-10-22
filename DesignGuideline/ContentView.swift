@@ -10,16 +10,27 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack {
-            Button("Submit") {
-                
+            HStack {
+                Text("Button")
+                    .font(.largeTitle)
+                    .fontWeight(.bold)
+                Spacer()
+            }
+            
+            
+            Button(action: {}) {
+                Text("Submit")
             }.buttonStyle(PrimaryBlueButtonStyle())
             
-            Button("Okay") {
-                
+            Button(action: {}) {
+                Text("Okay")
             }.buttonStyle(PrimaryGreenButtonStyle())
             
-            Button("Delete") {
-                
+            Button(action: {}) {
+                HStack {
+                    Image(systemName: "trash")
+                    Text("Delete")
+                }
             }.buttonStyle(SecondaryButtonStyle())
         }
         .padding()
