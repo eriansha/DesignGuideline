@@ -11,6 +11,9 @@
 		2C7512842AE570D500658F34 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7512832AE570D500658F34 /* ContentView.swift */; };
 		2C7512862AE570D700658F34 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C7512852AE570D700658F34 /* Assets.xcassets */; };
 		2C7512892AE570D700658F34 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C7512882AE570D700658F34 /* Preview Assets.xcassets */; };
+		2C7512932AE5734A00658F34 /* PrimaryBlueButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7512922AE5734A00658F34 /* PrimaryBlueButtonStyle.swift */; };
+		2C7512952AE5739500658F34 /* PrimaryGreenButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7512942AE5739500658F34 /* PrimaryGreenButtonStyle.swift */; };
+		2C7512972AE575A100658F34 /* SecondaryButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7512962AE575A100658F34 /* SecondaryButtonStyle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +22,9 @@
 		2C7512832AE570D500658F34 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2C7512852AE570D700658F34 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2C7512882AE570D700658F34 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2C7512922AE5734A00658F34 /* PrimaryBlueButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryBlueButtonStyle.swift; sourceTree = "<group>"; };
+		2C7512942AE5739500658F34 /* PrimaryGreenButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryGreenButtonStyle.swift; sourceTree = "<group>"; };
+		2C7512962AE575A100658F34 /* SecondaryButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondaryButtonStyle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +57,7 @@
 		2C7512802AE570D500658F34 /* DesignGuideline */ = {
 			isa = PBXGroup;
 			children = (
+				2C7512902AE5732700658F34 /* Themes */,
 				2C7512812AE570D500658F34 /* DesignGuidelineApp.swift */,
 				2C7512832AE570D500658F34 /* ContentView.swift */,
 				2C7512852AE570D700658F34 /* Assets.xcassets */,
@@ -65,6 +72,24 @@
 				2C7512882AE570D700658F34 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		2C7512902AE5732700658F34 /* Themes */ = {
+			isa = PBXGroup;
+			children = (
+				2C7512912AE5733000658F34 /* Buttons */,
+			);
+			path = Themes;
+			sourceTree = "<group>";
+		};
+		2C7512912AE5733000658F34 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				2C7512922AE5734A00658F34 /* PrimaryBlueButtonStyle.swift */,
+				2C7512942AE5739500658F34 /* PrimaryGreenButtonStyle.swift */,
+				2C7512962AE575A100658F34 /* SecondaryButtonStyle.swift */,
+			);
+			path = Buttons;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +162,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C7512932AE5734A00658F34 /* PrimaryBlueButtonStyle.swift in Sources */,
+				2C7512952AE5739500658F34 /* PrimaryGreenButtonStyle.swift in Sources */,
 				2C7512842AE570D500658F34 /* ContentView.swift in Sources */,
 				2C7512822AE570D500658F34 /* DesignGuidelineApp.swift in Sources */,
+				2C7512972AE575A100658F34 /* SecondaryButtonStyle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

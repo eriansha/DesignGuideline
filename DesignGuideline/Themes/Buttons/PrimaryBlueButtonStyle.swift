@@ -1,5 +1,5 @@
 //
-//  PrimaryButtonStyle.swift
+//  PrimaryBlueButtonStyle.swift
 //  DesignGuideline
 //
 //  Created by Ivan on 22/10/23.
@@ -7,15 +7,17 @@
 
 import SwiftUI
 
-struct PrimaryButtonStyle: ButtonStyle {
+struct PrimaryBlueButtonStyle: ButtonStyle {
     
-    public var disabled: Bool = true
+    public var disabled: Bool = false
     
     func makeBody(configuration: Configuration) -> some View {
+        let activeForegroundColor = configuration.isPressed ? Color.blue2 : Color.white
+        
         configuration.label
-            .frame(width: 300, height: 50)
-            .background(disabled ? .gray : .blue1)
-            .foregroundColor(.white)
+            .frame(minWidth: 342, maxHeight: 45)
+            .background(disabled ? .gray2 : .blue1)
+            .foregroundColor(disabled ? .white : activeForegroundColor)
             .cornerRadius(8)
             .disabled(disabled)
             .padding()
