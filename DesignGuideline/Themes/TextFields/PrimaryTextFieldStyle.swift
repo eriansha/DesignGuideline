@@ -20,7 +20,7 @@ struct PrimaryTextFieldStyle: TextFieldStyle {
             .padding(.horizontal, 12)
             .background(disabled ? .gray2 : backgroundColor)
             .cornerRadius(10)
-            .overlay( /// apply a rounded border
+            .overlay(
                 RoundedRectangle(cornerRadius: 10)
                     .stroke(.gray2, lineWidth: 1)
             )
