@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C5B05A52AE5EC41004709B2 /* CheckboxToggleStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5B05A42AE5EC41004709B2 /* CheckboxToggleStyle.swift */; };
+		2C5B05A72AE5ECA5004709B2 /* Toggles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5B05A62AE5ECA5004709B2 /* Toggles.swift */; };
 		2C7512822AE570D500658F34 /* DesignGuidelineApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7512812AE570D500658F34 /* DesignGuidelineApp.swift */; };
 		2C7512842AE570D500658F34 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7512832AE570D500658F34 /* ContentView.swift */; };
 		2C7512862AE570D700658F34 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C7512852AE570D700658F34 /* Assets.xcassets */; };
@@ -21,6 +23,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2C5B05A42AE5EC41004709B2 /* CheckboxToggleStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckboxToggleStyle.swift; sourceTree = "<group>"; };
+		2C5B05A62AE5ECA5004709B2 /* Toggles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toggles.swift; sourceTree = "<group>"; };
 		2C75127E2AE570D500658F34 /* DesignGuideline.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesignGuideline.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C7512812AE570D500658F34 /* DesignGuidelineApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignGuidelineApp.swift; sourceTree = "<group>"; };
 		2C7512832AE570D500658F34 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -46,6 +50,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2C5B05A32AE5EC2D004709B2 /* Toggles */ = {
+			isa = PBXGroup;
+			children = (
+				2C5B05A42AE5EC41004709B2 /* CheckboxToggleStyle.swift */,
+			);
+			path = Toggles;
+			sourceTree = "<group>";
+		};
 		2C7512752AE570D500658F34 = {
 			isa = PBXGroup;
 			children = (
@@ -86,6 +98,7 @@
 		2C7512902AE5732700658F34 /* Themes */ = {
 			isa = PBXGroup;
 			children = (
+				2C5B05A32AE5EC2D004709B2 /* Toggles */,
 				2C75129F2AE57D2400658F34 /* TextFields */,
 				2C7512912AE5733000658F34 /* Buttons */,
 			);
@@ -108,6 +121,7 @@
 			children = (
 				2C75129B2AE57C4200658F34 /* Buttons.swift */,
 				2C75129D2AE57CE700658F34 /* TextFields.swift */,
+				2C5B05A62AE5ECA5004709B2 /* Toggles.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -196,6 +210,8 @@
 				2C7512952AE5739500658F34 /* PrimaryGreenButtonStyle.swift in Sources */,
 				2C7512842AE570D500658F34 /* ContentView.swift in Sources */,
 				2C7512822AE570D500658F34 /* DesignGuidelineApp.swift in Sources */,
+				2C5B05A52AE5EC41004709B2 /* CheckboxToggleStyle.swift in Sources */,
+				2C5B05A72AE5ECA5004709B2 /* Toggles.swift in Sources */,
 				2C7512A12AE57D6100658F34 /* PrimaryTextFieldStyle.swift in Sources */,
 				2C7512972AE575A100658F34 /* SecondaryButtonStyle.swift in Sources */,
 				2C75129E2AE57CE700658F34 /* TextFields.swift in Sources */,
