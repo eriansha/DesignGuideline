@@ -15,7 +15,7 @@ struct PrimaryGreenButtonStyle: ButtonStyle {
         let activeForegroundColor = configuration.isPressed ? Color.green2 : Color.white
         
         configuration.label
-            .frame(minWidth: 342, maxHeight: 45)
+            .frame(minWidth: 342, minHeight: 45)
             .background(disabled ? .gray2 : .green1)
             .foregroundColor(disabled ? .white : activeForegroundColor)
             .foregroundColor(.white)

@@ -15,7 +15,7 @@ struct DestructiveButtonStyle: ButtonStyle {
         let activeForegroundColor = configuration.isPressed ? Color.red3 : Color.red2
         
         configuration.label
-            .frame(minWidth: 342, maxHeight: 45)
+            .frame(minWidth: 342, minHeight: 45)
             .background(disabled ? .gray2 : .red1)
             .foregroundColor(disabled ? .white : activeForegroundColor)
             .cornerRadius(10)

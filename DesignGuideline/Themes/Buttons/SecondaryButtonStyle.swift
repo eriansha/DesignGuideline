@@ -15,7 +15,7 @@ struct SecondaryButtonStyle: ButtonStyle {
         let activeForegroundColor = configuration.isPressed ? Color.gray2 : Color.black
         
         configuration.label
-            .frame(minWidth: 342, maxHeight: 45)
+            .frame(minWidth: 342, minHeight: 45)
             .background(disabled ? .gray2 : .white)
             .foregroundColor(disabled ? .white : activeForegroundColor)
             .cornerRadius(10)

@@ -15,7 +15,7 @@ struct PrimaryBlueButtonStyle: ButtonStyle {
         let activeForegroundColor = configuration.isPressed ? Color.blue2 : Color.white
         
         configuration.label
-            .frame(minWidth: 342, maxHeight: 45)
+            .frame(minWidth: 342, minHeight: 45)
             .background(disabled ? .gray2 : .blue1)
             .foregroundColor(disabled ? .white : activeForegroundColor)
             .cornerRadius(8)
