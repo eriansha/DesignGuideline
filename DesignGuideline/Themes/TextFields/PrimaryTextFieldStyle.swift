@@ -16,17 +16,6 @@ struct PrimaryTextFieldStyle: TextFieldStyle {
     func _body(configuration: TextField<Self._Label>) -> some View {
         let backgroundColor = isError ? Color.red1 : Color.white
         
-        VStack {
-            
-            if let labelField = label  {
-                HStack {
-                    Text(labelField)
-                        .font(.caption)
-                    
-                    Spacer()
-                }
-            }
-            
             configuration
                 .frame(minWidth: 344, minHeight: 48)
                 .padding(.horizontal, 12)
@@ -38,6 +27,5 @@ struct PrimaryTextFieldStyle: TextFieldStyle {
                 )
                 .padding(.vertical, 5)
                 .disabled(disabled)
-        }
     }
 }

@@ -33,6 +33,9 @@ struct TextFields: View {
             
             TextField(placeholder, text: $dummyValue)
                 .textFieldStyle(PrimaryTextFieldStyle(disabled: true))
+            
+            TextField(placeholder, text: $dummyValue)
+                .textFieldStyle(SearchFieldStyle(value: $dummyValue))
         }
     }
 }
