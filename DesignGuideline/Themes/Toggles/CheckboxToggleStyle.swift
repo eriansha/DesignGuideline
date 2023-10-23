@@ -21,9 +21,11 @@ struct CheckboxToggleStyle: ToggleStyle {
                 )
                 .fill(disabled ? .gray2 : fillColor)
                 .frame(width: 24, height: 24)
-                .overlay {
-                    Image(systemName: configuration.isOn ? "checkmark" : "")
-                        .foregroundStyle(.white)
+                .if(!disabled) { view in
+                    view.overlay {
+                        Image(systemName: configuration.isOn ? "checkmark" : "")
+                            .foregroundStyle(.white)
+                    }
                 }
                 .onTapGesture {
                     withAnimation(.spring()) {
