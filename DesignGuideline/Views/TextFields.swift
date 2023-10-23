@@ -18,7 +18,12 @@ struct TextFields: View {
                     .font(.largeTitle)
                     .fontWeight(.bold)
                 Spacer()
-            }
+            }.padding(.bottom, 10)
+            
+            TextField(placeholder, text: $dummyValue)
+                .textFieldStyle(PrimaryTextFieldStyle(
+                    label: "Username"
+                ))
             
             TextField(placeholder, text: $dummyValue)
                 .textFieldStyle(PrimaryTextFieldStyle())

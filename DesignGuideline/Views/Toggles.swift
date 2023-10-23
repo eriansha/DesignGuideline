@@ -17,7 +17,7 @@ struct Toggles: View {
                     .font(.largeTitle)
                     .fontWeight(.bold)
                 Spacer()
-            }
+            }.padding(.bottom, 10)
             
             Toggle("Check me", isOn: $dummyIsChecked)
                 .toggleStyle(CheckboxToggleStyle())

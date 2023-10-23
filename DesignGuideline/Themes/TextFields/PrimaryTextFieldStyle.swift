@@ -9,22 +9,35 @@ import SwiftUI
 
 struct PrimaryTextFieldStyle: TextFieldStyle {
     
+    public var label: String?
     public var isError: Bool = false
     public var disabled: Bool = false
     
     func _body(configuration: TextField<Self._Label>) -> some View {
         let backgroundColor = isError ? Color.red1 : Color.white
         
-        configuration
-            .frame(minWidth: 344, minHeight: 48)
-            .padding(.horizontal, 12)
-            .background(disabled ? .gray2 : backgroundColor)
-            .cornerRadius(10)
-            .overlay(
-                RoundedRectangle(cornerRadius: 10)
-                    .stroke(.gray2, lineWidth: 1)
-            )
-            .padding(.vertical, 10)
-            .disabled(disabled)
+        VStack {
+            
+            if let labelField = label  {
+                HStack {
+                    Text(labelField)
+                        .font(.caption)
+                    
+                    Spacer()
+                }
+            }
+            
+            configuration
+                .frame(minWidth: 344, minHeight: 48)
+                .padding(.horizontal, 12)
+                .background(disabled ? .gray2 : backgroundColor)
+                .cornerRadius(10)
+                .overlay(
+                    RoundedRectangle(cornerRadius: 10)
+                        .stroke(.gray2, lineWidth: 1)
+                )
+                .padding(.vertical, 5)
+                .disabled(disabled)
+        }
     }
 }

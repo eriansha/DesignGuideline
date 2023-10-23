@@ -15,7 +15,7 @@ struct Buttons: View {
                     .font(.largeTitle)
                     .fontWeight(.bold)
                 Spacer()
-            }
+            }.padding(.bottom, 10)
             
             Button(action: {}) {
                 Text("Submit")
