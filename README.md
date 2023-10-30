@@ -1,16 +1,25 @@
 ## Description
 Project explorartion to apply design guideline by providing built-in style.
 
-https://github.com/eriansha/DesignGuideline/assets/18480194/117828eb-2832-4ea6-adc8-05b43bf1c53f
+https://github.com/eriansha/DesignGuideline/assets/18480194/9c0561b1-bed7-4419-86b1-b1a0cb9dc723
 
 ### Available Style
 - Button
+  - Primary Blue
+  - Primary Green
+  - Secondary (Outline)
+  - Destructive
 - TextField
+  - Primary
+  - Search Field 
 - Toggle
+  - Checkbox 
 
 ## Usage
 To use the built-in style, we need to pass the selected style to the style modifier
 ```swift
+
+
 Button(action: {}) {
   Text("Press Me)
 }.buttonStyle(PrimaryGreenButtonStyle())
