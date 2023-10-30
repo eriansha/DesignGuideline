@@ -14,13 +14,12 @@
 		2C7512842AE570D500658F34 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7512832AE570D500658F34 /* ContentView.swift */; };
 		2C7512862AE570D700658F34 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C7512852AE570D700658F34 /* Assets.xcassets */; };
 		2C7512892AE570D700658F34 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C7512882AE570D700658F34 /* Preview Assets.xcassets */; };
-		2C7512932AE5734A00658F34 /* PrimaryBlueButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7512922AE5734A00658F34 /* PrimaryBlueButtonStyle.swift */; };
-		2C7512952AE5739500658F34 /* PrimaryGreenButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7512942AE5739500658F34 /* PrimaryGreenButtonStyle.swift */; };
 		2C7512972AE575A100658F34 /* SecondaryButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7512962AE575A100658F34 /* SecondaryButtonStyle.swift */; };
 		2C7512992AE57B3400658F34 /* DestructiveButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7512982AE57B3400658F34 /* DestructiveButtonStyle.swift */; };
 		2C75129C2AE57C4200658F34 /* Buttons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C75129B2AE57C4200658F34 /* Buttons.swift */; };
 		2C75129E2AE57CE700658F34 /* TextFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C75129D2AE57CE700658F34 /* TextFields.swift */; };
 		2C7512A12AE57D6100658F34 /* PrimaryTextFieldStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7512A02AE57D6100658F34 /* PrimaryTextFieldStyle.swift */; };
+		2C9FF1BF2AF0118F008E8368 /* PrimaryButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9FF1BE2AF0118F008E8368 /* PrimaryButtonStyle.swift */; };
 		2CF286E02AE630C500687577 /* SearchFieldStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF286DF2AE630C500687577 /* SearchFieldStyle.swift */; };
 /* End PBXBuildFile section */
 
@@ -33,13 +32,12 @@
 		2C7512832AE570D500658F34 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2C7512852AE570D700658F34 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2C7512882AE570D700658F34 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		2C7512922AE5734A00658F34 /* PrimaryBlueButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryBlueButtonStyle.swift; sourceTree = "<group>"; };
-		2C7512942AE5739500658F34 /* PrimaryGreenButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryGreenButtonStyle.swift; sourceTree = "<group>"; };
 		2C7512962AE575A100658F34 /* SecondaryButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondaryButtonStyle.swift; sourceTree = "<group>"; };
 		2C7512982AE57B3400658F34 /* DestructiveButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestructiveButtonStyle.swift; sourceTree = "<group>"; };
 		2C75129B2AE57C4200658F34 /* Buttons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Buttons.swift; sourceTree = "<group>"; };
 		2C75129D2AE57CE700658F34 /* TextFields.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFields.swift; sourceTree = "<group>"; };
 		2C7512A02AE57D6100658F34 /* PrimaryTextFieldStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryTextFieldStyle.swift; sourceTree = "<group>"; };
+		2C9FF1BE2AF0118F008E8368 /* PrimaryButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButtonStyle.swift; sourceTree = "<group>"; };
 		2CF286DF2AE630C500687577 /* SearchFieldStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFieldStyle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -121,10 +119,9 @@
 		2C7512912AE5733000658F34 /* Buttons */ = {
 			isa = PBXGroup;
 			children = (
-				2C7512922AE5734A00658F34 /* PrimaryBlueButtonStyle.swift */,
-				2C7512942AE5739500658F34 /* PrimaryGreenButtonStyle.swift */,
 				2C7512962AE575A100658F34 /* SecondaryButtonStyle.swift */,
 				2C7512982AE57B3400658F34 /* DestructiveButtonStyle.swift */,
+				2C9FF1BE2AF0118F008E8368 /* PrimaryButtonStyle.swift */,
 			);
 			path = Buttons;
 			sourceTree = "<group>";
@@ -218,10 +215,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C9FF1BF2AF0118F008E8368 /* PrimaryButtonStyle.swift in Sources */,
 				2C75129C2AE57C4200658F34 /* Buttons.swift in Sources */,
 				2C7512992AE57B3400658F34 /* DestructiveButtonStyle.swift in Sources */,
-				2C7512932AE5734A00658F34 /* PrimaryBlueButtonStyle.swift in Sources */,
-				2C7512952AE5739500658F34 /* PrimaryGreenButtonStyle.swift in Sources */,
 				2C7512842AE570D500658F34 /* ContentView.swift in Sources */,
 				2C7512822AE570D500658F34 /* DesignGuidelineApp.swift in Sources */,
 				2C5B05A52AE5EC41004709B2 /* CheckboxToggleStyle.swift in Sources */,

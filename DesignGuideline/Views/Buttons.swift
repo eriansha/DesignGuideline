@@ -19,11 +19,11 @@ struct Buttons: View {
             
             Button(action: {}) {
                 Text("Submit")
-            }.buttonStyle(PrimaryBlueButtonStyle())
+            }.buttonStyle(PrimaryButtonStyle(color: .blue))
             
             Button(action: {}) {
                 Text("Okay")
-            }.buttonStyle(PrimaryGreenButtonStyle())
+            }.buttonStyle(PrimaryButtonStyle())
             
             Button(action: {}) {
                 Text("Sign In")
